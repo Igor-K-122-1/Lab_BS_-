@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>lab1_Task1</title>
+    <style>
+        main {
+            background-color: #db9686;
+            display: flex;
+            justify-content: center; 
+            padding: 20px;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        .container-fluid {
+            background-color: black;
+            width: 95%;
+            padding: 20px;
+            box-sizing: border-box;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        .row {
+            background-color: #ce5893;
+            display: flex;
+            justify-content: space-around;
+            padding: 5px;
+            box-sizing: border-box;
+            margin-bottom: 15px;
+            padding-top: 30px;
+            padding-bottom: 30px;            
+        }
+        
+        .col-sm-4, .col-sm-6 {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            box-sizing: border-box;
+            margin: 10px;
+            
+            display: flex;
+    		align-items: center;
+    		justify-content: center;
+        }
+        
+        .col-sm-4 {
+        	min-height: 180px;
+        	width: 30%
+        }
+        .col-sm-6 {
+        	min-height: 180px;
+       		width: 50%
+        }
+        
+    </style>
+</head>
+
+<body>
+
+<main>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4">col-sm-4</div>
+            <div class="col-sm-4">col-sm-4</div>
+            <div class="col-sm-4">col-sm-4</div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">col-sm-6</div>
+            <div class="col-sm-6">col-sm-6</div>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>

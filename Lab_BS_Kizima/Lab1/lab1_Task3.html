@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout Example with Adjusted Title Position</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    
+    .margin, .title, .gallery, .buy-box, .description, .related {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: #3b5998;
+      color: white;
+      padding: 5px;
+      text-align: center;
+      /*margin: 5px; */
+      border: 2px solid white; /* Added border between blocks */
+    }
+    .title { height: 50px; }
+    .gallery { height: 300px; }
+    .buy-box { height: 250px; }
+    .description { height: 150px; }
+    .related { height: 100px; }
+    .main { padding-left: 0; padding-right: 0; }
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-1 margin">Margin</div>
+      <div class="col-10">
+        <div class="row">
+          <div class="col-6 gallery">Gallery</div>
+          <div class="col-6 main">
+            <div class="title">Title</div>
+            <div class="buy-box">Buy Box</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 description">Description</div>
+        </div>
+        <div class="row">
+          <div class="col-12 related">Related</div>
+        </div>
+      </div>
+      <div class="col-1 margin">Margin</div>
+    </div>
+  </div>
+</body>
+</html>
+
